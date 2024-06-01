@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    
+    <div id="div_encabezado">
+        
+        <h1>ProgramaMemes</h1>
+        <nav>
+            <a href="../ulpWeb1.io/pag2/index2.html">Memardos</a>
+            <a href="../ulpWeb1.io/pag3/index3.html">Institucional</a>
+        </nav>
+        <div id="botones_redes">
+            <i class="fab fa-instagram"></i> 
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i> 
+            <i class="fab fa-youtube"></i>
+        </div>
+        
+    </div>
+    <div id="carrusel">
+        <div id="carrusel_Imagenes"></div>
+        <button id="anteriorButton" onclick="imagenAnterior()">Anterior</button>
+        <button id="siguienteButton" onclick="imagenSiguiente()">Siguiente</button>
+    </div>
+    <div id="div_contenedor">
+        <div class="contenedor_imagen">
+            <div id="institucional"></div>
+            <div id="linkinstitu">
+                <div id="div_link1">
+                    <A href="../ulpWeb1.io/pag3/index3.html">INSTUTUCIONAL</A>
+                    
+            </div>
+            <ul>
+                <li>Descripcion de la carrera</li>
+                <li>Plan de estudios</li>
+                <li>Requisitos de inscripción</li>
+                <li>Infirmación del curso introductorio</li>
+            </ul>
+                </div>
+        </div>
+        <div class="contenedor_imagen">
+            <div id="memes"></div>
+            <div id="linkmemes">
+
+                <div id="div_link2">
+                    <a href="../ulpWeb1.io/pag2/index2.html">MEMARDOS</a>
+                   
+                </div>
+                <ul>
+                    <li>Memes</li>
+                    <li>Memes</li>
+                    <li>Memes</li>
+                    <li>Y si! mas memes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <button id="boton_contacto">Contactanos</button>
+
+        <div class="footer_columnas">
+
+        
+        <ul class="footer_listas"> 
+            <li>¿Quiénes somos?:</li>
+            <li>Sosa Rebeca - Estudiante de la TUDS en la ULP</li>
+            <li>Moya Gerardo - Estudiante de la TUDS en la ULP</li>
+            
+        </ul>
+     </div>
+        <div class="footer_columnas">
+            <ul class="footer_listas">
+                <li>Información ULP:</li>
+                <li>Direccion: Av. Universitaria s/n
+                    Ciudad de La Punta, San Luis - Contacto: Teléfono: +54 0266 4452 000
+                    Email: contacto@ulp.edu.ar - Pagina Web: https://www.ulp.edu.ar/</li>
+                <li>Redes Sociales <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-youtube"></i></li>
+            </ul>    
+        </div>
+        <div class="footer_columnas">
+
+            <ul class="footer_listas">
+                <li>Razones</li>
+                <li>No hay por qué</li>
+                <li>En realidad, si lo hay:</li>
+                <li>Queremos aprobar Web 1</li>
+            </ul>
+    
+        </div>
+
+
+
+        <div id="vnt" class="vnt_emerg">
+            <div class="contenido_emerg">
+            <span class="btn_cerrar">&times;</span>
+            <h2>Ingresá tus datos y te enviaremos mas info!</h2>
+            <form id="frm_contacto" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required maxlength="30">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" required maxlength="30">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Telefono: </label>
+                    <input type="tel" name="telefono" id="telefono" required maxlength="10" pattern="[0-9]+">
+                </div>    
+                <div class="campo">
+                    <label for="correo">Correo: </label>
+                    <input type="email" name="email" id="email" required maxlength="60">
+                </div>    
+                <button type="submit">ENVIAR</button>
+    
+            </form>
+            
+            <div id="respuesta"></div>
+        </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js" defer></script>
+
+   
+
+
+</body>
+</html>

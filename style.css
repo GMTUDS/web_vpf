@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#div_encabezado{
+    background-image: url("imagenes/img_encav.jpg");
+    background-size: cover;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+}
+#div_encabezado h1 {
+    width: 80%;
+    height: 20%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size:50px;
+    padding-left: 0%;
+}
+#botones_redes{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+#botones_redes i:hover{
+    color: yellow;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #8da3bb; 
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+body{
+    background-image: url("imagenes/fondoCodigo.jpeg");
+    background-size:contain;
+    min-height: 100vh;
+
+}
+
+
+#carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; 
+    background: rgba(255, 255, 255, 0.5);
+    border: #ff8000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#anteriorButton {
+    left: 10px; 
+}
+
+#siguienteButton {
+    right: 10px; 
+}
+
+#carrusel {
+    position: relative;
+    width: 100%; 
+    overflow-x: hidden;
+    height: 200px;
+    margin-top: 20px;
+}
+#carrusel_Imagenes {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#contenedor-imagenes {
+    display: flex; 
+    flex-wrap: wrap; 
+    
+}
+
+#carrusel img {
+    width: calc(25% - 2px);
+    height: 200px; 
+    object-fit: cover; 
+    margin: 1px;
+    border-radius: 8px;    
+}
+#div_contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#institucional, #memes{
+    width: 244px;
+    height: 251px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+#institucional{
+    background-image: url("imagenes/ANGELITO.jpg");
+    margin-right: 50px;
+   
+}
+
+#memes{
+    background-image: url("imagenes/DIABLITO.jpg");
+}
+
+.contenedor_imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#linkinstitu, #linkmemes{
+    width: 244px;
+    height: 251px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+#linkinstitu {
+    background-color:rgb(115, 159, 240);
+
+}
+#linkmemes {
+    background-color:rgb(207, 61, 16);
+}
+#div_link1{
+    display: flex;
+    justify-content: center;
+    background-color:yellow;
+    border-radius: 8px;
+    width: 80%;
+    height: 15%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#linkinstitu a {
+    color: red;
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+
+}
+#linkinstitu a:hover{
+    text-decoration: underline;
+   
+}
+
+
+#div_link2 {
+    display: flex;
+    justify-content: center;
+    background-color:yellow; 
+    border-radius: 8px;
+    width: 80%;
+    height: 15%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#linkmemes a {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+}
+
+#linkmemes a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#linkinstitu ul,
+#linkmemes ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+}
+
+#linkinstitu ul li,
+#linkmemes ul li {
+    background-color: yellow; 
+    border-radius: 4px; 
+    padding: 10px; 
+    margin-bottom: 5px; 
+ 
+    font-size: 18px; 
+}
+
+#linkinstitu ul li:hover,
+#linkmemes ul li:hover {
+    text-decoration: underline; 
+}
+
+#footer{
+    background-image: url("imagenes/img_footer.jpg");
+    background-size: cover;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+.footer_columnas{
+    flex: 1;
+    padding: 0 10px;
+    text-align: center;
+}
+.footer_listas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer_listas li {
+    background-color: #6C5B7B;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 15px;
+
+}
+.footer_listas li:hover{
+    text-decoration: underline;
+}
+.campo{
+    margin-bottom: 15px;
+    width: auto;
+}
+.campo label{
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 60px;
+}
+.campo input{
+    
+    display: inline-block;
+    width: calc(80%);
+    margin-right: 10px;
+}
+
+.vnt_emerg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+   /* background-color: rgb(39, 83, 121);*/
+}
+
+.contenido_emerg{
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid rgba(101, 108, 209, 0.904);
+    width: 35%;
+    border-radius: 10px;
+
+}   
+
+.btn_cerrar{
+    color: #6e0006;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: #ff8000;
+
+
+}
+
+.btn_cerrar:hover,
+.btn_cerrar:focus{
+    color: #00ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#frm_contacto button[type="submit"]{
+margin-top: 10px;
+mar
+}   
+
+#frm_contacto button[type="submit"]:hover {
+    background-color: #ff9933;
+    border-color: #ff92;
+    
+}
+#respuesta{
+    margin-top: 20px;
+}
+
+#boton_contacto {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#boton_contacto:hover{
+    background-color: black;
+}
